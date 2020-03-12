@@ -196,6 +196,7 @@ public final class ApiJettyExecutable {
                 ".*/[^/]*servlet-api-[^/]*\\.jar$|.*/javax.servlet.jsp.jstl-.*\\.jar$|.*/[^/]*taglibs.*\\.jar$");
 
         new EnvEntry(appApi, "exemple-service-configuration", resource.getAbsolutePath(), true);
+        new EnvEntry(appApi, "spring.config.location", "classpath:default.yml", true);
 
         contexts.addHandler(appApi);
 
