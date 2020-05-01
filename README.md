@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/doudouchat/exemple-embedded.svg?branch=master)](https://travis-ci.org/doudouchat/exemple-embedded)
+
 # exemple-embedded
 
 ## jersey
