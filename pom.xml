@@ -120,7 +120,7 @@
 		<dependency>
 			<groupId>com.datastax.oss</groupId>
 			<artifactId>java-driver-core</artifactId>
-			<version>4.6.0</version>
+			<version>4.6.1</version>
 		</dependency>
 
 		<!-- CASSANDRA EMBEDDED -->
