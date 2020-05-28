@@ -1,10 +1,10 @@
 USE test;
 
 CREATE TYPE IF NOT EXISTS address (
-    street text,
-    city text,
-    zip text,
-    floor int,
+	street text,
+	city text,
+	zip text,
+	floor int,
 	enable boolean
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS account (
 	lastname text, 
 	firstname text, 
 	birthday date,
-    address address,	
+	address address,	
 	addresses map<text, frozen<address>>,
 	profils set<text>,
 	cgus set<frozen<cgu>>,
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS account (
 
 CREATE TABLE IF NOT EXISTS login (
 	id UUID,
-	login text PRIMARY KEY,
+	username text PRIMARY KEY,
 	password text,
 	disabled boolean,
 	account_locked boolean,
@@ -50,24 +50,22 @@ CREATE TABLE IF NOT EXISTS account_history (
 	field text,
 	date timestamp,
 	value text,
+	application text,
+	version text,
+	user text,
+	previous_value text,
 	PRIMARY KEY ((id), field)
-);
-
-CREATE TABLE IF NOT EXISTS parameter ( 
-	app text PRIMARY KEY,
-	histories map<text, boolean>,
-	logins set<text>
 );
 
 CREATE TABLE IF NOT EXISTS resource_schema ( 
 	app text,
-    version text,
+	version text,
 	resource text,
+	profile text,
 	content blob,
 	filter set<text>,
-	transform map<text, frozen<set<text>>>,
 	rule map<text, frozen<set<text>>>,
-	PRIMARY KEY ((app), resource, version)
+	PRIMARY KEY ((app), resource, version, profile)
 );
        
 CREATE INDEX IF NOT EXISTS account_status
