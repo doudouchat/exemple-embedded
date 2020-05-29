@@ -40,7 +40,7 @@
 
 		<!-- VERSION -->
 
-		<jetty-version>9.4.28.v20200408</jetty-version>
+		<jetty-version>9.4.29.v20200521</jetty-version>
 
 	</properties>
 
