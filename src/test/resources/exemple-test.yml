@@ -81,6 +81,8 @@ gateway:
       port: ${hazelcast.port}
    security: 
       excludes: /ExempleService(/?), /.*/info, /.*/health, /.*/openapi.json, /ExempleAuthorization/oauth/.*, /ExempleService/ws/.*/schemas/.*
+      csrf:
+         excludes: /ExempleAuthorization/oauth/**
 zookeeper:
    port: ${zmp.clientPort}
 cassandra:
