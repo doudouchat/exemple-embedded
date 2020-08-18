@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS account (
 	lastname text, 
 	firstname text, 
 	birthday date,
-	address address,	
+	address address,
 	addresses map<text, frozen<address>>,
 	profils set<text>,
 	cgus set<frozen<cgu>>,
@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS account (
 	optin_mobile boolean,
 	mobile text,
 	creation_date timestamp,
+	update_date timestamp,
 	preferences list<frozen<map<text, text>>>
 );
 
@@ -42,7 +43,8 @@ CREATE TABLE IF NOT EXISTS login (
 );
 
 CREATE TABLE IF NOT EXISTS subscription (
-	email text PRIMARY KEY
+	email text PRIMARY KEY,
+	subscription_date timestamp,
 );
 
 CREATE TABLE IF NOT EXISTS account_history ( 
