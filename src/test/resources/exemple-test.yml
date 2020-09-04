@@ -85,4 +85,4 @@ gateway:
 zookeeper:
    port: ${zmp.clientPort}
 cassandra:
-   port: ${cassandra.nativeTransportPort}
+   port: ${cassandra.port}

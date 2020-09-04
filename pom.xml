@@ -33,7 +33,7 @@
 		<authorization.port>8084</authorization.port>
 		<gateway.port>8080</gateway.port>
 
-		<cassandra.nativeTransportPort>9042</cassandra.nativeTransportPort>
+		<cassandra.port>9042</cassandra.port>
 		<hazelcast.port>5705</hazelcast.port>
 		<zmp.clientPort>10024</zmp.clientPort>
 		<kafka.port>10025</kafka.port>
