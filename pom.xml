@@ -31,7 +31,7 @@
 
 		<api.port>8082</api.port>
 		<authorization.port>8084</authorization.port>
-		<gateway.port>8080</gateway.port>
+		<gateway.port>8086</gateway.port>
 
 		<cassandra.port>9042</cassandra.port>
 		<hazelcast.port>5705</hazelcast.port>
