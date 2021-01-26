@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/doudouchat/exemple-embedded.svg?branch=master)](https://travis-ci.com/doudouchat/exemple-embedded)
+[![build](https://github.com/doudouchat/exemple-embedded/workflows/build/badge.svg)](https://github.com/doudouchat/exemple-embedded/actions)
 
 # exemple-embedded
 
